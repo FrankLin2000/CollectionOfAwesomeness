@@ -6,7 +6,6 @@
  *  Licensed under Creative Commons SA-BY-NC 3.0.  
  *
  */
-
-unsigned char stepsToRed (int steps);
-unsigned char stepsToBlue (int steps);
-unsigned char stepsToGreen (int steps);
+unsigned char stepsToRed (int steps){return steps;}
+unsigned char stepsToBlue (int steps){return steps % 128;}
+unsigned char stepsToGreen (int steps){return steps / 64;}
